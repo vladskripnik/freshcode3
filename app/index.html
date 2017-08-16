@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+<head>
+  <meta charset="utf-8" name="csrf-token" content="C6Wmk7MyMYYMGgV7pZaGkZdiMOLQL5lR">
+  <title>datingchile</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="shortcut icon" href="img/images/layouts/touch-icon-android.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.min.css" />
+  <script src="https://unpkg.com/lodash@4/lodash.min.js"></script>
+  <script src="https://unpkg.com/lowdb/dist/lowdb.min.js"></script>
+
+</head>
+<body ng-controller="PhoneListCtrl">
+  <div>
+    <header class="site-header" style="background-color: #70a6ff;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <a href="#/"><img class="logo" src="img/images/layouts/logo.svg" alt=""></a>
+            <div class="logoword">Encuentra tu Pareja Ideal</div>
+          </div>
+          <div class="col-md-5">
+            <div class="autho">
+              Если у вас уже есть профиль
+            </div>
+            <div class="col-md-4">
+              <input class="inputfor" placeholder=" Email"></input>
+            </div>
+            <div class="col-md-4">
+              <input class="inputfor" placeholder=" Password" ></input>
+            </div>
+            <div class="col-md-4">
+              <button class="button">Вход</button>
+            </div>
+            <div class="col-md-8">
+              <input type="checkbox">
+              <label for="subscribeNews" style="color:#fff;font-family: Avenir, sans-serif;font-size: 12px;">Запомнить</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>  
+  <div class="container">
+    <ng-view></ng-view>
+  </div>
+  <div class="container">
+    <div class="photocarusel">
+      <data-owl-carousel class="owl-carousel" data-options="{navigation: true, pagination: true, rewindNav : true}">
+          <div owl-carousel-item="" ng-repeat="item in items1" class="item">
+            <img ng-src="{{item}}" alt="">
+          </div>
+      </data-owl-carousel><!--/.col-sm-6.col-lg-4-->
+    </div>
+  </div> 
+
+
+ <!-- <footer>
+    <p>&copy; Light It 2017</p>
+  </footer>-->
+
+</div><!--/.container-->
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="js/controllers/controllers.js"></script>
+<script src="js/factory/factory.js"></script>
+<script src="js/filtres/filters.js"></script>
+<script src="js/directives/directives.js"></script>
+<script src="js/controllers/AuthorizationController.js"></script>
+<script src="js/controllers/PhoneDetailsController.js"></script>
+<script src="js/controllers/PhoneListController.js"></script>
+<script src="js/directives/PhotoCarouselDirective.js"></script>
+<script src="js/controllers/exitController.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script src="database/DBConfig/DbUsersConfig.js"></script>
+</body>
+</html>

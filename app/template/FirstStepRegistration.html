@@ -1,0 +1,64 @@
+<div class="registerpanel" style="background-image: url(img/images/portada/dating-hero.jpg);background-size: 1400px;width: 120%;height: 400px;">
+      <!--<img src="img/images/portada/dating-hero.jpg" style="width: 130%;z-index: 3;">-->
+      <form class="registerform">
+        <div>
+          <h2 class="textgl">Создать свой профиль</h2>
+        </div>
+        <div class="row">
+          <div>
+            <div class="registerone" ng-model="info.sex">
+              <label class="wordp">Soy</label>   
+              <select class="selection">
+                <option selected value=""></option>
+                <option value="1">Hombre</option>
+                <option value="2">Mujer</option>
+              </select>
+            </div>
+          </div>
+          <div class="registertwo" ng-model="info.research">
+            <label class="wordp">y Busco</label>   
+            <select class="selection">
+              <option selected value=""></option>
+              <option value="Pareja">Pareja</option>
+              <option value="Amigos">Amigos</option>
+              <option value="Chatear">Chatear</option>
+            </select>
+          </div>
+          <div class="registertwo" ng-model="info.age">
+            <label class="wordp">entre</label>
+            <select class="selection">
+              <option selected value=""></option>
+              <option value="1">18 y 24 años</option>
+              <option value="2">25 y 31 años</option>
+              <option value="3">32 y 38 años</option>
+              <option value="4">39 y 45 años</option>
+              <option value="5">46 y 52 años</option>
+              <option value="6">53 años y más</option>
+            </select>
+          </div>
+          <div class="registertwo" ng-model="info.region">
+            <label class="wordp">Que vivan en</label>   
+            <select class="selection">
+              <option selected value=""></option>
+              <option value="I Region">I Region</option>
+              <option value="II Region">II Region</option>
+              <option value="III Region">III Region</option>
+              <option value="IV Region">IV Region</option>
+              <option value="IX Region">IX Region</option>
+              <option value="R. M.">R. M.</option>
+              <option value="V Region">V Region</option>
+              <option value="VI Region">VI Region</option>
+              <option value="VII Region">VII Region</option>
+            </select>
+          </div>
+          <div class="registertwo">
+            <label></label>
+            <button ng-click="registerstep()" class="button-press">Siguiente</button>
+          </div>
+        </div>
+        <div class="col-12">
+          <h3 class="bot-messege">¡Únete a nosotros para conocer gente! Hoy somos más de 900.000 inscritos</h3>
+        </div>
+      </form>
+      <!--<ng-view></ng-view>-->
+    </div>
